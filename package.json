@@ -1,0 +1,18 @@
+{
+  "author": "Swizec Teller <swizec@swizec.com> (http://swizec.com)",
+  "name": "llamaduck",
+  "description": "A simple utility to check if your code is node 0.6 compatible",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Swizec/llamaduck.git"
+  },
+  "scripts": {
+    "test": "expresso"
+  },
+  "engines": {
+    "node": "~0.4.8"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
