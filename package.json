@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "main": "./llamaduck.js",
   "bin": {
-    "llamaduck": "./llamaduck.js"
+    "llamaduck": "./index.js"
   },
   "repository": {
     "type": "git",
