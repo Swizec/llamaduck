@@ -4,6 +4,9 @@
   "description": "A simple utility to check if your code is node 0.6 compatible",
   "version": "0.0.1",
   "main": "./llamaduck.js",
+  "bin": {
+    "llamaduck": "./llamaduck.js"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/Swizec/llamaduck.git"
