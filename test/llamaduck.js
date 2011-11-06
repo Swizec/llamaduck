@@ -1,10 +1,12 @@
 
-var parser = require('uglify-js').parser;
-var fs = require('fs');
+var llamaduck = require('../lib/llamaduck');
+var path = require('path');
+var util = require('util');
 
 exports['test basic parsing'] =  function (beforeExit, assert) {
-    fs.readFile('./test/llamaduck.js', function (err, data) {
-        if (err) throw err;
-        console.log(parser.parse(data+""));
-    });
+
+    llamaduck.get_ast(path.resolve('./test/fixtures/process.js'),
+                      function (ast) {
+                          assert.ok(ast[1].length >= 5);
+                      });
 };

@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+var llamaduck = require('./lib/llamaduck');
+
 var filepath = process.argv.pop();
 
-console.log(filepath);
+llamaduck.quack(filepath);
